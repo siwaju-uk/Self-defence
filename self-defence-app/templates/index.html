@@ -1,0 +1,232 @@
+{% extends "base.html" %}
+
+{% block title %}Self-Defence - UK Civil Litigation Specialist{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <!-- Hero Section -->
+    <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-10">
+            <div class="hero-section">
+                <div class="hero-title">Self-Defence</div>
+                <div class="hero-subtitle">
+                    UK civil litigation made simple and accessible
+                </div>
+                <p class="mb-4 text-muted">
+                    Get instant access to specialized legal guidance for civil litigation matters up to £100,000. 
+                    Covering Small Claims, Fast Track, and Multi-Track procedures with real-time legal information.
+                </p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="{{ url_for('chat') }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-comments me-2"></i>Start Legal Chat
+                    </a>
+                    <a href="#features" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-info-circle me-2"></i>Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Legal Disclaimer Alert -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <div class="alert alert-warning" role="alert">
+                <h5 class="alert-heading">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    Legal Disclaimer
+                </h5>
+                <p class="mb-2">
+                    This chatbot provides <strong>general legal information only</strong> and does not constitute legal advice.
+                    The information provided should not be relied upon for legal decisions.
+                </p>
+                <hr>
+                <p class="mb-0">
+                    For specific legal advice about your situation, please 
+                    <strong>consult a qualified solicitor</strong>.
+                    <a href="{{ url_for('legal_disclaimer') }}" class="alert-link">Read full disclaimer</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="feature-grid">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-gavel"></i>
+            </div>
+            <h4>Track Classification</h4>
+            <p>Automatic allocation to Small Claims, Fast Track, or Multi-Track based on your claim value and complexity.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <h4>Real-time Legal Information</h4>
+            <p>Access current case law, procedures, and statutory provisions with proper citations through Perplexity AI integration.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-user-tie"></i>
+            </div>
+            <h4>Solicitor Referrals</h4>
+            <p>Get matched with qualified solicitors who specialize in your type of case and claim value range.</p>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-gavel fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="card-title">Civil Litigation Expertise</h5>
+                    <p class="card-text">
+                        Specialized knowledge of UK civil litigation procedures across all tracks:
+                        Small Claims, Fast Track, and Multi-Track disputes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-pound-sign fa-3x text-success"></i>
+                    </div>
+                    <h5 class="card-title">Money Claims Focus</h5>
+                    <p class="card-text">
+                        Expert guidance on monetary claims up to £100,000 including damages calculation,
+                        court fees, and funding options.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="feature-icon mb-3">
+                        <i class="fas fa-users fa-3x text-info"></i>
+                    </div>
+                    <h5 class="card-title">Solicitor Referrals</h5>
+                    <p class="card-text">
+                        Intelligent referral system to connect you with appropriate legal professionals
+                        based on your case type and complexity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Track Types Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="text-center mb-4">UK Civil Litigation Tracks</h2>
+        </div>
+        
+        <div class="col-lg-4 mb-3">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-star me-2"></i>
+                        Small Claims Track
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="text-success">Up to £10,000</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Consumer disputes</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Minor debt recovery</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Contract breaches</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Deposit disputes</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Simple personal injury</li>
+                    </ul>
+                    <small class="text-muted">
+                        Simplified procedure, limited costs exposure
+                    </small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 mb-3">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="mb-0">
+                        <i class="fas fa-clock me-2"></i>
+                        Fast Track
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="text-warning">£10,000 - £25,000</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-warning me-2"></i>Commercial disputes</li>
+                        <li><i class="fas fa-check text-warning me-2"></i>Professional negligence</li>
+                        <li><i class="fas fa-check text-warning me-2"></i>Employment compensation</li>
+                        <li><i class="fas fa-check text-warning me-2"></i>RTA claims</li>
+                        <li><i class="fas fa-check text-warning me-2"></i>Property damage</li>
+                    </ul>
+                    <small class="text-muted">
+                        Standard directions, fixed trial costs
+                    </small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 mb-3">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-cogs me-2"></i>
+                        Multi-Track
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <h6 class="text-danger">£25,000 - £100,000</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-danger me-2"></i>Complex commercial litigation</li>
+                        <li><i class="fas fa-check text-danger me-2"></i>Substantial personal injury</li>
+                        <li><i class="fas fa-check text-danger me-2"></i>Professional indemnity</li>
+                        <li><i class="fas fa-check text-danger me-2"></i>Partnership disputes</li>
+                        <li><i class="fas fa-check text-danger me-2"></i>Construction disputes</li>
+                    </ul>
+                    <small class="text-muted">
+                        Case management, costs budgeting required
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <div class="card bg-light text-dark">
+                <div class="card-body py-4">
+                    <h3 class="card-title">Ready to Get Legal Guidance?</h3>
+                    <p class="card-text mb-4">
+                        Start your consultation with our specialized UK civil litigation chatbot.
+                        Get instant access to relevant legal information and solicitor referrals.
+                    </p>
+                    <div class="d-grid gap-2 d-md-block">
+                        <a href="{{ url_for('chat') }}" class="btn btn-primary btn-lg me-2">
+                            <i class="fas fa-comments me-2"></i>
+                            Start Legal Chat
+                        </a>
+                        <a href="{{ url_for('legal_disclaimer') }}" class="btn btn-outline-secondary btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Read Disclaimer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
